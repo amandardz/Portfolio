@@ -1,6 +1,9 @@
+body{
+    margin: 0;
+}
+
 header {
     border: 5px black dotted;
-    overflow: hidden;
 }
 
 header::after {
@@ -45,6 +48,41 @@ nav a {
 
 nav a:hover {
     padding: 10px;
+    background-color: teal;
     border: black 5px dotted;
 }
 
+.fullscreen {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;   
+}
+
+.maincontainer {
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+h1 {
+    font-size: 5rem;
+    
+}
+
+hr {
+    border-color: black;
+    border-style: none;
+    border-top-style: solid;
+    border-width: 2px;
+    width: 15%;
+    margin: 0 auto;
+}
+
+h1, h2, hr {
+    padding: 5px;
+}
