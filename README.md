@@ -5,5 +5,5 @@ Hi, my name is Amanda Rodriguez. I am a full-stack developer working on honing m
 
 
 ## Screenshot of Portfolio
-<img src="assets/images/portfolio.png" alt="Image of portfolio">
+<img src="assets\images\portfolio.PNG" alt="Image of portfolio">
 
