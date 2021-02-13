@@ -39,7 +39,7 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -218,3 +218,4 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
