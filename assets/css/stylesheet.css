@@ -56,9 +56,6 @@ nav a:hover {
 
 .fullscreen {
     height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
 }
 
 .maincontainer {
@@ -74,6 +71,10 @@ nav a:hover {
 h1 {
     font-size: 5rem;
     
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 hr {
@@ -111,9 +112,7 @@ h1, h2, hr {
     margin-right: 30px;
 }
 
-#about h2 {
-    font-size: 2rem;
-}
+
 
 #about p {
     font-size: 1rem;
@@ -121,3 +120,58 @@ h1, h2, hr {
     padding: 10px;
     margin-right: 30px;
 }
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfoliocontainer {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.portfoliocontainer h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 -20px;
+}
+
+.work {
+    width: 100%;
+    padding: 5px 5px;
+    flex: 1 1 50%;
+  }
+  
+.work img {
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .primarythumbnail {
+      padding-bottom: 45%;
+      position: relative;
+      margin-bottom: 5px;
+  }
+
+  .primarythumbnail img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-height: 100%;
+  }
+
+  .secondarythumbnail {
+      padding: 15px;
+  }
