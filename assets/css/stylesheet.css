@@ -157,22 +157,69 @@ h1, h2, hr {
     width: 100%;
   }
 
-  .primarythumbnail {
-      padding-bottom: 45%;
-      position: relative;
-      margin-bottom: 5px;
-  }
+.primarythumbnail {
+    padding-bottom: 45%;
+    position: relative;
+    margin-bottom: 5px;
+}
 
-  .primarythumbnail img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      max-height: 100%;
-  }
+.primarythumbnail img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+}
 
-  .secondarythumbnail {
-      padding: 15px;
-  }
-  
+.secondarythumbnail {
+    padding: 15px;
+}
+
+.contactcontainer {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;    
+}
+
+.contactcontainer h2 {
+    text-align: center;
+}
+
+.contactcontainer a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.contactcontainer a:visited {
+    color: inherit;
+}
+
+.contactcontainer a:hover {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.contactcard {
+    height: 100px;
+    text-align: center;
+}
+
+.contactcard p {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer::before {
+    content: '';
+    display: block;
+    clear: both;    
+}
