@@ -179,7 +179,7 @@ h1, h2, hr {
 .contactcontainer {
     width: 95%;
     margin: 0 auto;
-    padding: 20px;    
+    padding: 10px 0px 5px 0px;    
 }
 
 .contactcontainer h2 {
@@ -216,10 +216,5 @@ h1, h2, hr {
 
 footer {
     text-align: center;
-}
-
-footer::before {
-    content: '';
-    display: block;
-    clear: both;    
+    padding: 20px;
 }
