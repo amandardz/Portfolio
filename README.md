@@ -10,5 +10,5 @@ To develop a portfolio that gives a potential employer insight on a potential em
 <p align="center"> *Note that image is cropped due to sizing* </p>
 <p align="center"> <img src="assets\images\portfolio.PNG" alt="Image of portfolio"> </p>
 
-<p align="center"> [Click here to see website](https://amandardz.github.io/Portfolio/) </p>
+<p align="center"> <a href="https://amandardz.github.io/Portfolio/">Click here to view portfolio</a> </p>
 
