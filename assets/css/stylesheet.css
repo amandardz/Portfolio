@@ -183,7 +183,7 @@ h1, h2, hr {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 25%;
+    width: 35%;
     padding: 5px;
     background-color: black;
     color: whitesmoke;
@@ -287,10 +287,26 @@ footer {
     }
 
     .primarythumbnail figcaption {
-        width: 45%;
+        width: 50%;
     }
     
     .portfoliocontainer figcaption {
         font-size: 10pt;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2  {
+        font-size: 1rem;
+    }
+
+    .primarythumbnail figcaption {
+        width: 50%;
+    }
+}
+
+
