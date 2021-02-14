@@ -157,6 +157,7 @@ h1, h2, hr {
     width: 100%;
   }
 
+
 .primarythumbnail {
     padding-bottom: 45%;
     position: relative;
@@ -172,8 +173,28 @@ h1, h2, hr {
     max-height: 100%;
 }
 
+.primarythumbnail figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    padding: 5px;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+}
 .secondarythumbnail {
     padding: 15px;
+}
+
+.secondarythumbnail figcaption {
+    position: relative;
+    padding: 5px;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
 }
 
 .contactcontainer {
