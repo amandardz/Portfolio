@@ -6,7 +6,7 @@ Hi, my name is Amanda Rodriguez. I am a full-stack developer working on honing m
 ## Usage
 To develop a portfolio that gives a potential employer insight on a potential employee ensure to present your name, a recent photo, and links to sections such as about, work, and contact. Link these sections in the navigation for the UI to scroll to the corresponding section for easy navigation. Especially, the section about your work where potential employers may look for samples. Be sure to include descriptions and link to your work samples to give potential employees insight on your skills. Also, consider creating a responsive webpage for your portfolio. This is so your portfolio's layout and content can adapt to any device a potential employee may view it in. 
 
-<p> <center>Image of website</center> </p>
+## Portfolio Preview
 <p> *Note that image is cropped due to sizing* </p>
 <img src="assets\images\portfolio.PNG" alt="Image of portfolio">
 
