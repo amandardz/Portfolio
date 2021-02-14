@@ -2,6 +2,7 @@ body{
     margin: 0;
 }
 
+/* Header and Navigation Section */
 header::after {
     content: '';
     display: block;
@@ -54,10 +55,12 @@ nav a:hover {
     padding: 10px;
 }
 
+/*Viewport Style*/
 .fullscreen {
     height: 100vh;
 }
 
+/* Main Section */
 .maincontainer {
     position: absolute;
     margin: 0 auto;
@@ -68,6 +71,7 @@ nav a:hover {
     text-align: center;
 }
 
+/* Headings and Horizontal Line Style */
 h1 {
     font-size: 5rem;
     
@@ -90,6 +94,7 @@ h1, h2, hr {
     padding: 5px;
 }
 
+/* About Section */
 #about {
     position: relative;
     display: flex;
@@ -112,15 +117,15 @@ h1, h2, hr {
     margin-right: 30px;
 }
 
-
-
 #about p {
     font-size: 1rem;
     line-height: 1.5;
     padding: 10px;
     margin-right: 30px;
+
 }
 
+/* Portfolio Section */
 #portfolio {
     display: flex;
     flex-direction: column;
@@ -183,6 +188,7 @@ h1, h2, hr {
     background-color: black;
     color: whitesmoke;
     font-weight: bold;
+    text-align: center;
 }
 .secondarythumbnail {
     padding: 15px;
@@ -197,6 +203,7 @@ h1, h2, hr {
     text-align: center;
 }
 
+/* Contact Section */
 .contactcontainer {
     width: 95%;
     margin: 0 auto;
@@ -235,8 +242,55 @@ h1, h2, hr {
     margin-top: 40px;
 }
 
+/* Footer Section */
 footer {
     text-align: center;
     padding: 20px;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 20%;
+    }
+
+    nav li {
+        margin-left: 10px;
+    }
+
+    nav li, .contactcard {
+        font-size: small;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    #about img {
+        width: 30%;
+        height: 30%;
+        margin-left: 0;
+        margin-right: 7px;
+    }
+
+    #about h2 {
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    #about p {
+        overflow: hidden;
+    }
+
+    .primarythumbnail figcaption {
+        width: 45%;
+    }
+    
+    .portfoliocontainer figcaption {
+        font-size: 10pt;
+    }
+}
