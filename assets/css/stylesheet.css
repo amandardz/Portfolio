@@ -1,42 +1,17 @@
-body{
-    margin: 0;
-}
-
-/* Header and Navigation Section */
-header::after {
-    content: '';
-    display: block;
-    clear: both;    
-}
-
-.container {   
-    width: 95%;
-    margin: 0 auto;
-    
-}
-
-.logo {
-    float: left;
-    width: 105px;
-    padding: 10px;
-}
-
-nav {
-    float: right;
-    margin-top: 30px;
-}
-
-nav ul {
+* {
     margin: 0;
     padding: 0;
-    list-style: none;
+    box-sizing: border-box;
+    color: black;
 }
 
-nav li {
-    color: black;
-    display: inline-block;
-    margin-left: 30px;
-    position: relative;
+/*Navigation Section */
+nav {
+    
+}
+nav li{
+    font: caption;
+    font-size: 15px;
 }
 
 nav a {
@@ -55,30 +30,24 @@ nav a:hover {
     padding: 10px;
 }
 
-/*Viewport Style*/
-.fullscreen {
+.jumbotron {
+    background-image: url("../images/background-img.jpg");
+    background-size: cover;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-/* Main Section */
-.maincontainer {
-    position: absolute;
-    margin: 0 auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-    text-align: center;
-}
-
 /* Headings and Horizontal Line Style */
 h1 {
-    font-size: 5rem;
+    font-size: 70px;
+    text-align: center;
     
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 30px;
+    text-align: center;
 }
 
 hr {
