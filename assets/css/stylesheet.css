@@ -175,9 +175,8 @@ iframe {
 }
 
 .contactcontainer a:hover {
-    background-color: black;
-    color: white;
-    padding: 10px;
+    border: 1px solid black;
+    padding: 25px;
 }
 
 .contactcard {
@@ -185,11 +184,9 @@ iframe {
     text-align: center;
 }
 
-.contactcard p {
-    display: inline-block;
-    margin-top: 40px;
+.contactcard i {
+    font-size: 40px;
 }
-
 /* Footer Section */
 footer {
     text-align: center;
