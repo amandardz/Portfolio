@@ -6,9 +6,6 @@
 }
 
 /*Navigation Section */
-nav {
-    
-}
 nav li{
     font: caption;
     font-size: 15px;
@@ -30,19 +27,29 @@ nav a:hover {
     padding: 10px;
 }
 
-.jumbotron {
-    background-image: url("../images/background-img.jpg");
+/* Main Section */
+main {
+    background-image: url("../images/background-image.jpg");
     background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* Containers */
+.jumbotron {
+    background-color: transparent;
+}
+
+.container-fluid {
+    background: transparent;
+}
+
 /* Headings and Horizontal Line Style */
 h1 {
     font-size: 70px;
     text-align: center;
-    
 }
 
 h2 {
@@ -61,63 +68,27 @@ hr {
 
 h1, h2, hr {
     padding: 5px;
+    background: transparent;
 }
 
 /* About Section */
-#about {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.aboutcontainer {
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-}
-
 #about img {
-    width: 300px;
-    height: 300px;
-    border-radius: 80%;
-    float: left;
-    margin-left: 50px;
-    margin-right: 30px;
+    height: 335px;
+    border-radius: 200px;
 }
 
-#about p {
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: 10px;
-    margin-right: 30px;
-
+#about a:link, #about a:visited {
+    color: black;
+}
+iframe{
+    width: 335px;
+    height: 200px;
 }
 
 /* Portfolio Section */
 #portfolio {
     display: flex;
     flex-direction: column;
-}
-
-.portfoliocontainer {
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 10px 0;
-}
-
-.portfoliocontainer h2 {
-    text-align: center;
-    padding: 10px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 0 -20px;
 }
 
 .work {
