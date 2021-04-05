@@ -8,7 +8,7 @@ To develop a portfolio that gives a potential employer insight on a potential em
 
 ## Portfolio Preview
 <p align="center"> *Note that image is cropped due to sizing* </p>
-<p align="center"> <img src="Portfolio\assets\images\portfolio.png" alt="Image of portfolio"> </p>
+<p align="center"> <img src="assets\images\portfolio.png" alt="Image of portfolio"> </p>
 
 <p align="center"> <a href="https://amandardz.github.io/Portfolio/">Click here to view portfolio</a> </p>
 
