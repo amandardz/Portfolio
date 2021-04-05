@@ -195,63 +195,12 @@ footer {
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
-    .logo {
-        width: 20%;
-    }
 
-    nav li {
-        margin-left: 10px;
-    }
 
-    nav li, .contactcard {
-        font-size: small;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    #about img {
-        width: 30%;
-        height: 30%;
-        margin-left: 0;
-        margin-right: 7px;
-    }
-
-    #about h2 {
-        display: inline-block;
-        margin-left: 5px;
-    }
-
-    #about p {
-        overflow: hidden;
-    }
-
-    .primarythumbnail figcaption {
-        width: 50%;
-    }
-    
-    .portfoliocontainer figcaption {
-        font-size: 10pt;
-    }
 }
 
 @media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
-    }
 
-    h2  {
-        font-size: 1rem;
-    }
-
-    .primarythumbnail figcaption {
-        width: 50%;
-    }
 }
 
 
