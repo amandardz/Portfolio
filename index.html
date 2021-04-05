@@ -10,7 +10,7 @@
 <body>
 <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
+        <nav id="regularNav" class="navbar">
             <div class="navbar-brand" >
               <img src="assets/images/arvisuals.png" height="50" alt="logo">
             </div>
@@ -28,6 +28,22 @@
                     <a class="nav-link" href="#contact">Contact</a>
                   </li>
               </ul>
+        </nav>
+        <nav id="mobileNav" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div id="navContent">
+                <img class="navbar-brand" src="assets/images/arvisuals.png" height="50" alt="logo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav"> 
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -52,14 +68,17 @@
                 </div>
 
                 <div class="col">
-                    <img id='aboutImg' src="assets/images/Amanda.jpg" alt="Image of Amanda">
+                    <img id='aboutImg' class="img-thumbnail" src="assets/images/Amanda.jpg" alt="Image of Amanda">
                 </div>
 
                 <div class="col">
-                    <a href='assets/docs/Amanda_Rodriguez_Resume.pdf' target="_blank">
-                        <h2>Work Experience</h2>
-                        <iframe src="assets/docs/Amanda_Rodriguez_Resume.pdf"></iframe>
-                    </a>
+                    <div>
+                        <a href='assets/docs/Amanda_Rodriguez_Resume.pdf' target="_blank">
+                            <h2>Work Experience</h2>
+                            <iframe src="assets/docs/Amanda_Rodriguez_Resume.pdf"></iframe>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>

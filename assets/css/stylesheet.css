@@ -6,6 +6,10 @@
 }
 
 /*Navigation Section */
+#mobileNav {
+    display: none;
+}
+
 nav li{
     font: caption;
     font-size: 15px;
@@ -30,8 +34,7 @@ nav a:hover {
 /* Main Section */
 main {
     background-image: url("../images/background-image.jpg");
-    background-size: cover;
-    height: 100vh;
+    background-size: 100% 150%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,9 +82,8 @@ h1, h2, hr {
     justify-content: center;
 }
 
-#about img {
-    height: 335px;
-    border-radius: 200px;
+.img-thumbnail {
+    border-radius: 300px;
 }
 
 #about a:link, #about a:visited {
@@ -194,13 +196,50 @@ footer {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 600px) {
+@media (max-width: 992px) {
+    #mobileNav {
+        display: block;
+    }
 
+    #regularNav {
+        display: none;
+    }
+
+    #navContent {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    nav a:hover {
+        background-color: transparent;
+        border: 1px solid black;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .main {
+        background-position: center;
+    }
+
+    .jumbotron {
+        height: 40vh;
+    }
+
+    .container {
+        max-width: 100vw;
+    }
+
+    .img-thumbnail {
+        border-radius: 300px;
+    }
+
+    .primarythumbnail img {
+        height: 405px;
+    }
 
 }
-
-@media only screen and (max-width: 768px) {
-
-}
-
 
