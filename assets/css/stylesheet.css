@@ -81,6 +81,15 @@ video {
   font-weight: 700;
 }
 
+#about button a {
+  color: white;
+}
+
+#about button a:hover {
+  background: white;
+  color: black;
+}
+
 /* Portfolio Section */
 .portfolio-card { 
   border: 1px solid;
@@ -156,6 +165,7 @@ video {
 }
 
 @media only screen and (min-width: 768px) {
+  /* Navigation Bar Section */
   #nav-links {
     display: flex;
     flex-direction: row;
@@ -179,10 +189,12 @@ video {
     display: none;
   }
 
+  /* Home Section */
   #home-title {
     font-size: x-large;
   }
 
+  /* About Section */
   #about {
     height: 80vh; 
   }
@@ -205,6 +217,11 @@ video {
     font-size: x-large;
   }
 
+  #about button {
+    font-size: larger;
+  }
+
+  /* Portfolio Section */
   .overlay-text {
     font-size: 20px;
   }
