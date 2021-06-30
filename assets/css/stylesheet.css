@@ -191,6 +191,20 @@ video {
     width: 80vw;
   }
 
+  #about .col-md-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about h4 {
+    font-size: xx-large;
+  }
+
+  #about p, #name {
+    font-size: x-large;
+  }
+
   .overlay-text {
     font-size: 20px;
   }
