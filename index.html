@@ -1,170 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Noto+Serif+SC&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <title>Amanda Rodriguez Portfolio</title>
 </head>
+
 <body>
-<!-- Navigation Bar -->
     <header>
-        <nav id="regularNav" class="navbar">
-            <div class="navbar-brand" >
-              <img src="assets/images/arvisuals.png" height="50" alt="logo">
-            </div>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-              </ul>
-        </nav>
-        <nav id="mobileNav" class="navbar navbar-expand-lg navbar-light bg-light">
-            <div id="navContent">
-                <img class="navbar-brand" src="assets/images/arvisuals.png" height="50" alt="logo">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav"> 
-                    <a class="nav-link" href="#home">Home</a>
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                    <a class="nav-link" href="#contact">Contact</a>
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex flex-row" href="#home">
+                    <span id="initialsBrand">AR</span> 
+                    <span id="Brand" class="d-flex align-items-center">Designs</span>
+                </a>
+
+                <ul id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+               <button class="btn btn-outline-light mobileNav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+              </button>
+              
+              <div class="offcanvas offcanvas-end mobileNav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-body">
+                      <div class="d-flex justify-content-end">
+                          <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                        <ul class="vh-100 d-flex flex-column justify-content-center align-items-center">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                 </div>
+              </div>
             </div>
         </nav>
     </header>
 
-<!-- Homescreen Section -->
-    <main id="home" class="jumbotron jumbotron-fluid">
-        <div class="container-fluid">
+    <main id="home" class="container-fluid vw-100 vh-100 d-flex justify-content-center align-items-center">
+
+        <video src="assets/video/background.mp4" playinline muted loop autoplay>
+        </video>
+
+        <div id="home-title" class="d-flex flex-column justify-content-center align-items-center">
             <h1>Amanda Rodriguez</h1>
             <hr>
             <h2>Full Stack Developer</h2>
         </div>
     </main>
 
-    <hr>
-
-<!-- About Section -->
-    <section id="about" class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>About</h2>
-                    <p>Hi, my name is Amanda Rodriguez. I am at the beginning of a new career path. I am excited to learn a lot of new things in a field that involves art and technology. I hope to build my creativity and use my creativity to design products that is inspiring and resourceful.</p>
+    <section id="about" class="container-fluid vw-100 d-flex flex-column justify-content-center align-items-center mt-5">
+        <div>
+            <h2 class="text-center">About Me</h2>
+            <hr>
+        </div>
+        <div class="card bg-transparent d-flex align-items-center">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <img src="assets/images/Amanda.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 mt-3">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Hello World!</h4>
+                  <p class="card-text"> My name is <span id="name">Amanda Rodriguez</span>. I am a Full Stack Developer. I earned my certificate from Southern Methodist University's Coding Bootcamp, where I learned to create responsive and optimal web applications with various frameworks such as JavaScript, Express, Mongo, React, and much more. My career goal is to utilize my experiences to build creative and engaging user interfaces that provide technical solutions to real-world situations. </p>
                 </div>
-
-                <div class="col">
-                    <img id='aboutImg' class="img-thumbnail" src="assets/images/Amanda.jpg" alt="Image of Amanda">
-                </div>
-
-                <div class="col">
-                    <div>
-                        <a href='assets/docs/Amanda_Rodriguez_Resume.pdf' target="_blank">
-                            <h2>Work Experience</h2>
-                            <iframe src="assets/docs/Amanda_Rodriguez_Resume.pdf"></iframe>
-                        </a>
-                    </div>
-
-                </div>
+              </div>
             </div>
+          </div>
+    </section>
+
+    <section id="portfolio" class="container-fluid vw-100 mt-5">
+        <div class="d-flex flex-column justify-content-center align-items-center mb-3">
+            <h2 >Portfolio</h2>
+            <hr>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly">
+            <div class="portfolio-card card col-5 text-center bg-transparent">
+                <div class="card-header">
+                  Employee Directory
+                </div>
+                <div class="card-body p-0">
+                    <img src="assets/images/employee-directory.png" class="img-fluid" alt="Employee-Directory">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            An employee directory created with React to manage list of employees
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/amandardz/Employee-Directory"><i class="portfolio-icons bi bi-github"></i>
+                    </a>
+                    <a href="https://amandardz.github.io/Employee-Directory/"><i class="portfolio-icons bi bi-link-45deg"></i>
+                    </a>
+                </div>
+              </div>
+
+              <div class="portfolio-card card col-5 text-center bg-transparent">
+                <div class="card-header">
+                  Weather DashBoard
+                </div>
+                <div class="card-body p-0">
+                    <img src="assets/images/weather-dash.jpg" class="img-fluid" alt="Weather DashBoard">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            A web application that uses OpenWeather API to find current weather conditions and forecasted weather for multiple cities.
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/amandardz/Weather-Dashboard"><i class="portfolio-icons bi bi-github"></i>
+                    </a>
+                    <a href="https://amandardz.github.io/Weather-Dashboard/"><i class="portfolio-icons bi bi-link-45deg"></i>
+                    </a>
+                </div>
+              </div>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly text-center mt-2">
+            <div class="portfolio-card card col-5 bg-transparent">
+                <div class="card-header">
+                  BookClub
+                </div>
+                <div class="card-body p-0">
+                    <img src="assets/images/bookclub.png" class="img-fluid" alt="BookClub">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            A web application for book enthusiasts to find book information and view reviews from other book enthusiast that will help them select their next book read.
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/amandardz/Book-Club"><i class="portfolio-icons bi bi-github"></i>
+                    </a>
+                    <a href="https://quiet-earth-09250.herokuapp.com/"><i class="portfolio-icons bi bi-link-45deg"></i>
+                    </a>
+                </div>
+              </div>
+
+              <div class="portfolio-card card col-5 text-center bg-transparent">
+                <div class="card-header">
+                  Tech Blog
+                </div>
+                <div class="card-body p-0">
+                    <img src="assets/images/tech-blog.png" class="img-fluid" alt="Tech-Blog">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            A CMS-style blog site that is utilize to create, publish, view, and review blogs.
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/amandardz/Tech-Blog"><i class="portfolio-icons bi bi-github"></i>
+                    </a>
+                    <a href="https://agile-mountain-00609.herokuapp.com/"><i class="portfolio-icons bi bi-link-45deg"></i>
+                    </a>
+                </div>
+              </div>
         </div>
     </section>
-    
-    <hr>
-<!-- Portfolio Section -->
-    <section id="portfolio">
-       <div class="container">
-            <h2>Portfolio</h2>
-            <div class="work">
-                <div class="primarythumbnail"> 
-            <!-- Large Top Work Sample -->
-                <a href="https://amandardz.github.io/BarScout/" target="_blank">
-                    <figure>
-                        <img src="assets/images/project1.PNG" alt="Project 1">
-                        <figcaption>BarScout APP</figcaption>
-                    </figure>
+
+    <section id="contact" class="container-fluid vw-100 mt-5">
+        <div class="d-flex flex-column justify-content-center align-items-center mb-3">
+            <h2>Contact Me</h2>
+            <hr>
+        </div>
+        <div class="card border-dark border-3 bg-transparent text-center d-flex justify-content-center">
+            <div class="card-body text-light">
+                <h5 class="card-title">Amanda Rodriguez</h5>
+                <p class="card-text">Full Stack Developer</p>
+            </div>
+            <div class="card-footer border-dark mx-2">
+                <a href=""><i class="contact-icons bi bi-envelope"></i>
                 </a>
-                
-                </div>
-
-            <!-- "Thumbnail" Work Samples-->
-                <div class="row secondarythumbnail">
-                    <div class="work">
-                        <a href="https://amandardz.github.io/Weather-Dashboard/" target="_blank">
-                        <figure>
-                            <img src="assets/images/weather-dash.jpg" alt="Weather Dashboard">
-                            <figcaption>Weather Dashboard</figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    <div class="work" >
-                        <a href="https://amandardz.github.io/Day-Schedule/" target="_blank">
-                        <figure>
-                            <img src="assets/images/day-schedule.PNG" alt="Day Schedule">
-                            <figcaption>Day Scheduler</figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    <div class="work">
-                        <a href="https://amandardz.github.io/Password-Generator/" target="_blank">
-                        <figure>
-                            <img src="assets/images/password-generator.PNG" alt="Password Generator">
-                            <figcaption>Password Generator</figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                    <div class="work">
-                        <a href="https://amandardz.github.io/Code-Refactor/" target="_blank">
-                        <figure>
-                            <img src="assets/images/coderefactor.png" alt="Code Refactor">
-                            <figcaption>Code Refactor</figcaption>
-                        </figure>
-                        </a>
-                    </div>
-                </div>
+                <a href=""><i class="contact-icons bi bi-telephone"></i>
+                </a>
+                <a href=""><i class="contact-icons bi bi-github"></i>
+                </a>
+                <a href=""><i class="contact-icons bi bi-linkedin"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <hr>
-
-<!-- Contact Section -->
-    <section id="contact">
-        <div class="contactcontainer">
-            <h2>Contact</h2>
-            <div class="contactcard">
-                <a href="mailto:amandardz15@gmail.com"><i class="bi bi-envelope"></i></a>
-                <a href="tel:+!2148684787"><i class="bi bi-telephone"></i></a>
-                <a href="https://github.com/amandardz"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/amandardz/"><i class="bi bi-linkedin"></i></a>
-            </div>
-        </div>
-
-    </section>
-
-    <hr>
-
-<!-- Footer Section -->
-    <footer>
-        <h4> © 2021 Amanda Rodriguez </h4>
+    <footer class="d-flex justify-content-center mt-5">
+        <h6> © 2021 Amanda Rodriguez </h6>
     </footer>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

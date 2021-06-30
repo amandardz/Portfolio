@@ -1,245 +1,193 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bungee Hairline', cursive;
+  color: #adb5bd;
 }
 
-/*Navigation Section */
-#mobileNav {
-    display: none;
+body {
+  background: black;
 }
 
-nav li{
-    font: caption;
-    font-size: 15px;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-nav a:visited {
-    color: inherit;
-}
-
-nav a:hover {
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
-
-/* Main Section */
-main {
-    background-image: url("../images/background-image.jpg");
-    background-size: 100% 150%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Containers */
-.jumbotron {
-    background-color: transparent;
-    height: 100vh;
-}
-
-.container-fluid {
-    background: transparent;
-}
-
-/* Headings and Horizontal Line Style */
-h1 {
-    font-size: 70px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 30px;
-    text-align: center;
+a {
+  text-decoration: none;
 }
 
 hr {
-    border-color: black;
-    border-style: none;
-    border-top-style: solid;
-    border-width: 2px;
-    width: 15%;
-    margin: 0 auto;
+  width: 200px;
 }
 
-h1, h2, hr {
-    padding: 5px;
-    background: transparent;
+/* Navigation Bar Section */
+
+#initialsBrand {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 25px;
+}
+
+#Brand {
+  color: white;
+  font-family: 'Bungee Hairline', cursive;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+
+nav li {
+  list-style: none;
+}
+
+#nav-links {
+  display: none;
+}
+
+.mobileNav li {
+  margin: 50px;
+  font-size: large;
+  font-weight: 700;
+}
+
+.mobileNav li a {
+  color: black;
+}
+
+.mobileNav li a:hover {
+  background: black;
+  color: white;
+  padding: 30px;
+}
+
+/* Main Section */
+#home {
+  position: relative;
+}
+
+#home-title {
+  position: absolute;
+}
+
+video {
+  width: -webkit-fill-available;
 }
 
 /* About Section */
-#about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#about .card-title{
+  color: white;
+  font-weight: 700;
 }
 
-.img-thumbnail {
-    border-radius: 300px;
-}
-
-#about a:link, #about a:visited {
-    color: black;
-}
-iframe {
-    width: 335px;
-    height: 200px;
+#name {
+  color: white;
+  font-size: large;
+  font-weight: 700;
 }
 
 /* Portfolio Section */
-#portfolio {
-    display: flex;
-    flex-direction: column;
+.portfolio-card { 
+  border: 1px solid;
+  box-shadow: 2px 2px #adb5bd;
 }
 
-.work {
-    width: 100%;
-    padding: 5px 5px;
-    flex: 1 1 50%;
-  }
-  
-.work img {
-    vertical-align: middle;
-    width: 100%;
-    height: 270px;
-  }
-
-
-.primarythumbnail {
-    padding-bottom: 45%;
-    position: relative;
-    margin-bottom: 5px;
+.portfolio-card .img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
-.primarythumbnail img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 495px;
+.portfolio-card .card-body {
+  position: relative;
 }
 
-.primarythumbnail figcaption {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 35%;
-    padding: 5px;
-    background-color: black;
-    color: whitesmoke;
-    font-weight: bold;
-    text-align: center;
-}
-.secondarythumbnail {
-    padding: 15px;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
 }
 
-.secondarythumbnail figcaption {
-    position: relative;
-    padding: 5px;
-    background-color: black;
-    color: whitesmoke;
-    font-weight: bold;
-    text-align: center;
+.portfolio-card .card-body:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-card .card-body {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: fit-content;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.portfolio-icons {
+  padding: 5px;
+}
+
+.portfolio-icons:hover, .contact-icons:hover {
+  background-color: white;
 }
 
 /* Contact Section */
-.contactcontainer {
-    width: 95%;
-    margin: 0 auto;
-    padding: 10px 0px 5px 0px;    
+#contact {
+  color: white;
 }
 
-.contactcontainer h2 {
-    text-align: center;
+#contact .card {
+  width: 95vw;
 }
 
-.contactcontainer a {
+
+.contact-icons {
+  font-size: large;
+  margin: 5px;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  #nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1px;
+  }
+
+  #nav-links a {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+  }
+
+  #nav-links a:hover {
+    background: white;
     color: black;
-    background-color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 20px;
+  }
+
+  .mobileNav {
+    display: none;
+  }
+
+  #home-title {
+    font-size: x-large;
+  }
+
+  #about {
+    height: 80vh; 
+  }
+
+  #about .card {
+    width: 80vw;
+  }
 }
-
-.contactcontainer a:visited {
-    color: inherit;
-}
-
-.contactcontainer a:hover {
-    border: 1px solid black;
-    padding: 25px;
-}
-
-.contactcard {
-    height: 100px;
-    text-align: center;
-}
-
-.contactcard i {
-    font-size: 40px;
-}
-/* Footer Section */
-footer {
-    text-align: center;
-    padding: 20px;
-}
-
-/* Media Queries */
-@media (max-width: 992px) {
-    #mobileNav {
-        display: block;
-    }
-
-    #regularNav {
-        display: none;
-    }
-
-    #navContent {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .navbar-nav {
-        align-items: center;
-    }
-
-    nav a:hover {
-        background-color: transparent;
-        border: 1px solid black;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .main {
-        background-position: center;
-    }
-
-    .jumbotron {
-        height: 40vh;
-    }
-
-    .container {
-        max-width: 100vw;
-    }
-
-    .img-thumbnail {
-        border-radius: 300px;
-    }
-
-    .primarythumbnail img {
-        height: 405px;
-    }
-
-}
-
