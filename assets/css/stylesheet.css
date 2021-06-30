@@ -190,4 +190,8 @@ video {
   #about .card {
     width: 80vw;
   }
+
+  .overlay-text {
+    font-size: 20px;
+  }
 }
