@@ -200,7 +200,7 @@ video {
   }
 
   #about .card {
-    width: 80vw;
+    margin: 0 auto;
   }
 
   #about .col-md-8 {
@@ -224,5 +224,25 @@ video {
   /* Portfolio Section */
   .overlay-text {
     font-size: 20px;
+  }
+
+  #portfolio .card-header {
+    font-size: x-large;
+  }
+  .portfolio-icons, .contact-icons {
+    font-size: xx-large;
+  }
+
+  /* Contact Section */
+  #contact .card {
+    width: 88vw;
+    margin: 0 auto;
+  }
+  #contact h5 {
+    font-size: xx-large;
+  }
+
+  #contact p {
+    font-size: x-large;
   }
 }
