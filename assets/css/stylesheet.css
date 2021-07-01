@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Bungee Hairline', cursive;
-  color: #adb5bd;
+  color: white;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
 }
 
 a {
+  color: white;
   text-decoration: none;
 }
 
@@ -26,7 +27,6 @@ hr {
 }
 
 #Brand {
-  color: white;
   font-family: 'Bungee Hairline', cursive;
   margin-top: 2px;
   margin-left: 1px;
@@ -51,7 +51,7 @@ nav li {
 }
 
 .mobileNav li a:hover {
-  background: black;
+  background: #000000;
   color: white;
   padding: 30px;
 }
@@ -71,18 +71,12 @@ video {
 
 /* About Section */
 #about .card-title{
-  color: white;
   font-weight: 700;
 }
 
 #name {
-  color: white;
   font-size: large;
   font-weight: 700;
-}
-
-#about button a {
-  color: white;
 }
 
 #about button a:hover {
@@ -130,7 +124,6 @@ video {
 }
 
 .overlay-text {
-  color: white;
   font-size: 12px;
   position: absolute;
   top: 50%;
