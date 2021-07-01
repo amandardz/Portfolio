@@ -190,6 +190,10 @@ video {
   }
 
   /* Home Section */
+  video {
+    width: fit-content;
+  }
+
   #home-title {
     font-size: x-large;
   }
@@ -201,6 +205,11 @@ video {
 
   #about .card {
     margin: 0 auto;
+  }
+
+  #about img {
+    height: 670px;
+    border-radius: 20px;
   }
 
   #about .col-md-8 {
