@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Bungee Hairline', cursive;
+  font-weight: 900;
   color: white;
 }
 
@@ -27,9 +28,9 @@ hr {
 }
 
 #Brand {
-  font-family: 'Bungee Hairline', cursive;
   margin-top: 2px;
   margin-left: 1px;
+  font-weight: normal;
 }
 
 nav li {
